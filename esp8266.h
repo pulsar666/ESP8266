@@ -92,3 +92,12 @@ void Wifi_disconnect(void);
  * arg2 - length of data
  */
 void send_TCP(uint8_t *,int);
+
+/*
+ * get data from TCP
+ * arg1 - buffer into which data will be stored
+ * arg2 - len of buffer to avoid overrruns
+ * returns minimum of length received and length of buffer
+ */
+ 
+ int getData(unsigned char *, int)
